@@ -46,7 +46,7 @@
 
 <body class="bg-gradient-to-br from-gray-950 to-indigo-950">
   <!-- Nav bar -->
-  <nav class="fixed top-0 left-8 w-full backdrop-blur-md z-50 shadow-sm pr-2 md:pr-20">
+  <nav class="fixed top-0 left-0 w-full backdrop-blur-md z-50 shadow-sm pr-2 md:pr-20">
     <div class="w-full px-2 sm:px-2 lg:px-2">
       <div class="flex justify-between items-center py-2">
         <div class="text-2xl font-bold  font-mono text-gray-50 text-left flex-shrink-0 ml-0 pl-0">
@@ -65,13 +65,13 @@
             class="nav-link text-white hover:text-accent text-lg transition-colors px-2 font-roboto">Contact</a>
         </div>
         <button id="mobile-menu-btn" class="md:hidden p-2">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
       <!-- Navbar Mobile -->
-      <div id="mobile-menu" class="md:hidden hidden pb-4">
+      <div id="mobile-menu" class="md:hidden hidden pb-4 bg-transparent m-0">
         <a href="#home" class="block py-2 text-white hover:text-primary">Home</a>
         <a href="#about" class="block py-2 text-white hover:text-primary">About</a>
         <a href="#skills" class="block py-2 text-white hover:text-primary">Skills</a>
@@ -82,9 +82,9 @@
   </nav>
 
   <!-- Landing Page -->
-  <section id="home" class="min-h-screen flex items-center">
+  <section id="home" class="min-h-screen flex items-center pt-24">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-2 w-full">
-      <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="grid md:grid-cols-2 gap-8 items-center ">
         <!-- Kiri: Judul dan deskripsi -->
         <div class="text-xl text-white">
           <h2 class="pb-4 text-2xl font-roboto">Hello, It's Me</h2>
@@ -504,11 +504,9 @@
 
   <!-- Footer -->
   <footer class="text-white py-8">
+    <div class="w-full h-px bg-gray-700 mx-auto mb-6"></div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p>&copy; 2025 hafidzthufail.</p>
-      <p class="text-gray-400 mt-2">
-        Built with 🛠️ using HTML, JavaScript & Tailwind CSS
-      </p>
     </div>
   </footer>
 
